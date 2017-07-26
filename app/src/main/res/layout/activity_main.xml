@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bryanyen.mydatefragment.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/CalebdarArea"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFEFD5"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageButton
+            android:id="@+id/calendarImageButton"
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/public_utility_detail_reundcorner"/>
+
+        <TextView
+            android:id="@+id/datePickerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/calendarImageButton"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/imageView4"
+            android:layout_toStartOf="@+id/imageView4"
+            android:maxLines="1"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/calendarImageButton"
+            android:layout_alignEnd="@+id/calendarImageButton"
+            android:layout_alignRight="@+id/calendarImageButton"
+            android:layout_alignTop="@+id/calendarImageButton"
+            android:layout_margin="0.4dp"
+            android:background="@drawable/public_utility_calendar_corner"
+            android:padding="8dp"
+            android:src="@drawable/icon_calendar"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
